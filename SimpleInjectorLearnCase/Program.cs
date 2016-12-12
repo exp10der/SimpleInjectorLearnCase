@@ -36,10 +36,7 @@
 
     public class SayHello : ISayHello
     {
-        public void Hello()
-        {
-            Console.WriteLine("Hello");
-        }
+        public void Hello() => Console.WriteLine("Hello");
     }
 
     public interface ISayHelloWithCtor
@@ -56,9 +53,6 @@
             _message = message;
         }
 
-        public void Hello()
-        {
-            Console.WriteLine(_message);
-        }
+        public void Hello() => Console.WriteLine(_message);
     }
 }
